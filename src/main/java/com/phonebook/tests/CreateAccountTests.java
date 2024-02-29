@@ -1,6 +1,5 @@
 package com.phonebook.tests;
 
-import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -8,26 +7,20 @@ import org.testng.annotations.Test;
 public class CreateAccountTests extends TestBase {
     @BeforeMethod
     public void ensurePrecondition(){
-        //if login link is not present
-        if (!isElementPresent(By.cssSelector("[href='/login']"))) {
-            //click on Sign Out button
-            click(By.xpath("//button[.='Sign Out']"));
+        if (!isLoginLinkPresent()) {
+
+            clickOnSignOutButton();
         }
     }
 
     @Test
     public void creatExistedAccountNegativeTest(){
-        //click link login
-        click(By.cssSelector("[href='/login']"));
-        //enter email
-        type(By.name("email"), "ddd@gmail.com");
-        //enter password
-        type(By.name("password"), "Aa1234567$");
-        //click on the registration button
-        click(By.name("registration"));
-        //assert Sing Out Button present
+        clickOnLoginLink();
+        fillLoginRegisterForm(new User().
+                setEmail("ddd@gmail.com").
+                setPassword( "Aa1234567$"));
+        clickOnRegistrationButton();
         Assert.assertTrue(isAlertAppears());
-
 
     }
 
