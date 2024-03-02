@@ -1,11 +1,12 @@
 package com.phonebook.fw;
 
-import org.openqa.selenium.Alert;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
+import com.google.common.io.Files;
+import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.io.File;
+import java.io.IOException;
 import java.time.Duration;
 
 public class BaseHelper {
@@ -51,4 +52,12 @@ public class BaseHelper {
         }
 
     }
+    public String takesScreenshot() throws IOException {
+        File tmp = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+        File screenshot = new File("screenshots/screen_" + System.currentTimeMillis() + ".png");
+
+        Files.copy(tmp,screenshot);
+        return screenshot.getAbsolutePath();
+    }
+
 }
