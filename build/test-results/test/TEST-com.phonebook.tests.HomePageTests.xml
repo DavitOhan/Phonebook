@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.phonebook.tests.HomePageTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-03-04T10:29:49" hostname="MBP-Davit.fritz.box" time="0.006">
+  <properties/>
+  <testcase name="isHomeComponentPresentTest" classname="com.phonebook.tests.HomePageTests" time="0.006"/>
+  <system-out><![CDATA[11:29:39.307 [Test worker] INFO  com.phonebook.fw.TestBase -- Start test isHomeComponentPresentTestwith data: []
+11:29:49.394 [Test worker] INFO  com.phonebook.fw.TestBase -- PASSEDisHomeComponentPresentTest
+11:29:49.395 [Test worker] INFO  com.phonebook.fw.TestBase -- Stop test
+11:29:49.395 [Test worker] INFO  com.phonebook.fw.TestBase -- *********************************************
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -12,6 +12,7 @@ import org.testng.annotations.BeforeSuite;
 
 import java.io.IOException;
 import java.lang.reflect.Method;
+import java.util.Arrays;
 
 public class TestBase {
 
@@ -32,8 +33,8 @@ public class TestBase {
        app.stop();
     }
     @BeforeMethod
-    public void startTest(Method method){
-        logger.info("Start test "+method.getName());
+    public void startTest(Method method,Object[]p){
+        logger.info("Start test "+method.getName()+"with data: "+ Arrays.asList(p));
     }
 
     @AfterMethod

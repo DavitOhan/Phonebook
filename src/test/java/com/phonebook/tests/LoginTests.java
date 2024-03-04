@@ -15,7 +15,7 @@ public class LoginTests extends TestBase {
         }
     }
 
-    @Test
+    @Test(priority = 1)
     public void loginPositiveTest(){
         app.getUser().clickOnLoginLink();
 
@@ -26,7 +26,7 @@ public class LoginTests extends TestBase {
         app.getUser().clickOnLoginButton();
         Assert.assertTrue(app.getUser().isSignOutButtonPresent());
     }
-    @Test
+    @Test(priority = 2)
     public void loginNegativeTestWithoutEmail(){
         app.getUser().clickOnLoginLink();
 

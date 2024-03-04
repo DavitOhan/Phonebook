@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.phonebook.tests.AddContactTests" tests="9" skipped="0" failures="0" errors="0" timestamp="2024-03-04T10:27:55" hostname="MBP-Davit.fritz.box" time="90.705">
+  <properties/>
+  <testcase name="addContactPositiveTest" classname="com.phonebook.tests.AddContactTests" time="1.539"/>
+  <testcase name="addContactPositiveTestFromDataProvider[0](Oliver, Kan, 1234567890, kkkam@gm.com, berlin, Gal)" classname="com.phonebook.tests.AddContactTests" time="0.862"/>
+  <testcase name="addContactPositiveTestFromDataProvider[1](Oliver1, Kan, 1234567890, kkkam@gm.com, berlin, Gal)" classname="com.phonebook.tests.AddContactTests" time="0.932"/>
+  <testcase name="addContactPositiveTestFromDataProvider[2](Oliver2, Kan, 1234567890, kkkam@gm.com, berlin, Gal)" classname="com.phonebook.tests.AddContactTests" time="0.87"/>
+  <testcase name="addContactPositiveTestFromDataProviderWithFile[0](com.phonebook.models.Contact@66813e6e)" classname="com.phonebook.tests.AddContactTests" time="0.857"/>
+  <testcase name="addContactPositiveTestFromDataProviderWithFile[1](com.phonebook.models.Contact@64763e49)" classname="com.phonebook.tests.AddContactTests" time="0.884"/>
+  <testcase name="addContactPositiveTestFromDataProviderWithFile[2](com.phonebook.models.Contact@2e0fdbe9)" classname="com.phonebook.tests.AddContactTests" time="1.135"/>
+  <testcase name="addContactPositiveTestFromDataProviderWithFile[3](com.phonebook.models.Contact@6e3dd5ce)" classname="com.phonebook.tests.AddContactTests" time="0.863"/>
+  <testcase name="addContactPositiveTestFromDataProviderWithFile[4](com.phonebook.models.Contact@4f235e8e)" classname="com.phonebook.tests.AddContactTests" time="0.855"/>
+  <system-out><![CDATA[11:27:55.532 [Test worker] INFO  com.phonebook.fw.TestBase -- Start test addContactPositiveTestwith data: []
+11:27:57.344 [Test worker] INFO  com.phonebook.fw.TestBase -- PASSEDaddContactPositiveTest
+11:27:57.344 [Test worker] INFO  com.phonebook.fw.TestBase -- Stop test
+11:27:57.344 [Test worker] INFO  com.phonebook.fw.TestBase -- *********************************************
+11:27:57.348 [Test worker] INFO  com.phonebook.fw.TestBase -- Start test addContactPositiveTestFromDataProviderwith data: [Oliver, Kan, 1234567890, kkkam@gm.com, berlin, Gal]
+11:28:08.445 [Test worker] INFO  com.phonebook.fw.TestBase -- PASSEDaddContactPositiveTestFromDataProvider
+11:28:08.445 [Test worker] INFO  com.phonebook.fw.TestBase -- Stop test
+11:28:08.445 [Test worker] INFO  com.phonebook.fw.TestBase -- *********************************************
+11:28:08.446 [Test worker] INFO  com.phonebook.fw.TestBase -- Start test addContactPositiveTestFromDataProviderwith data: [Oliver1, Kan, 1234567890, kkkam@gm.com, berlin, Gal]
+11:28:19.593 [Test worker] INFO  com.phonebook.fw.TestBase -- PASSEDaddContactPositiveTestFromDataProvider
+11:28:19.593 [Test worker] INFO  com.phonebook.fw.TestBase -- Stop test
+11:28:19.593 [Test worker] INFO  com.phonebook.fw.TestBase -- *********************************************
+11:28:19.594 [Test worker] INFO  com.phonebook.fw.TestBase -- Start test addContactPositiveTestFromDataProviderwith data: [Oliver2, Kan, 1234567890, kkkam@gm.com, berlin, Gal]
+11:28:30.691 [Test worker] INFO  com.phonebook.fw.TestBase -- PASSEDaddContactPositiveTestFromDataProvider
+11:28:30.691 [Test worker] INFO  com.phonebook.fw.TestBase -- Stop test
+11:28:30.691 [Test worker] INFO  com.phonebook.fw.TestBase -- *********************************************
+11:28:30.693 [Test worker] INFO  com.phonebook.fw.TestBase -- Start test addContactPositiveTestFromDataProviderWithFilewith data: [com.phonebook.models.Contact@66813e6e]
+11:28:41.814 [Test worker] INFO  com.phonebook.fw.TestBase -- PASSEDaddContactPositiveTestFromDataProviderWithFile
+11:28:41.814 [Test worker] INFO  com.phonebook.fw.TestBase -- Stop test
+11:28:41.814 [Test worker] INFO  com.phonebook.fw.TestBase -- *********************************************
+11:28:41.814 [Test worker] INFO  com.phonebook.fw.TestBase -- Start test addContactPositiveTestFromDataProviderWithFilewith data: [com.phonebook.models.Contact@64763e49]
+11:28:52.898 [Test worker] INFO  com.phonebook.fw.TestBase -- PASSEDaddContactPositiveTestFromDataProviderWithFile
+11:28:52.898 [Test worker] INFO  com.phonebook.fw.TestBase -- Stop test
+11:28:52.898 [Test worker] INFO  com.phonebook.fw.TestBase -- *********************************************
+11:28:52.898 [Test worker] INFO  com.phonebook.fw.TestBase -- Start test addContactPositiveTestFromDataProviderWithFilewith data: [com.phonebook.models.Contact@2e0fdbe9]
+11:29:04.298 [Test worker] INFO  com.phonebook.fw.TestBase -- PASSEDaddContactPositiveTestFromDataProviderWithFile
+11:29:04.298 [Test worker] INFO  com.phonebook.fw.TestBase -- Stop test
+11:29:04.298 [Test worker] INFO  com.phonebook.fw.TestBase -- *********************************************
+11:29:04.299 [Test worker] INFO  com.phonebook.fw.TestBase -- Start test addContactPositiveTestFromDataProviderWithFilewith data: [com.phonebook.models.Contact@6e3dd5ce]
+11:29:15.403 [Test worker] INFO  com.phonebook.fw.TestBase -- PASSEDaddContactPositiveTestFromDataProviderWithFile
+11:29:15.403 [Test worker] INFO  com.phonebook.fw.TestBase -- Stop test
+11:29:15.403 [Test worker] INFO  com.phonebook.fw.TestBase -- *********************************************
+11:29:15.404 [Test worker] INFO  com.phonebook.fw.TestBase -- Start test addContactPositiveTestFromDataProviderWithFilewith data: [com.phonebook.models.Contact@4f235e8e]
+11:29:26.498 [Test worker] INFO  com.phonebook.fw.TestBase -- PASSEDaddContactPositiveTestFromDataProviderWithFile
+11:29:26.498 [Test worker] INFO  com.phonebook.fw.TestBase -- Stop test
+11:29:26.498 [Test worker] INFO  com.phonebook.fw.TestBase -- *********************************************
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
